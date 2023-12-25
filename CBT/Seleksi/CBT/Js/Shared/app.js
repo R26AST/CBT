@@ -452,7 +452,9 @@ function submitExam(){
     	document.getElementById("nilai").value = score;
 
 	if (document.getElementById("nama").value === null && document.getElementById("kelas").value === null) {
-		document.getElementsByClassName("kirim").disabled = "true";
+		document.getElementsByClassName("kirim").style.display = "none";
+	} else {
+		document.getElementsByClassName("kirim").style.display = "block";
 	}
 }
 
