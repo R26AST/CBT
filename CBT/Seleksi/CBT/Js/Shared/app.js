@@ -451,10 +451,15 @@ function submitExam(){
    	document.querySelector(".total").innerHTML = "Total Skor: " + score.toString();
     	document.getElementById("nilai").value = score;
 
+	document.getElementById("nama").value.addEventListener('change', () => {
 	if (document.getElementById("nama").value != "" && document.getElementById("kelas").value != "") {
 		document.querySelector(".kirim").style.display = "block";
 	} else {
 		document.querySelector(".kirim").style.display = "none";
+	}
+	});
+	if (document.getElementById("nama").value == "" && document.getElementById("kelas").value == ""){
+	        document.querySelector(".kirim").style.display = "none";
 	}
 }
 
