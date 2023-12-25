@@ -2,13 +2,15 @@ let kerjakan = document.getElementById("kerjakan");
 let pedoman = document.getElementById("pedoman");
 let petunjuk = document.getElementById("petunjuk");
 let CBT = document.getElementById("CBT");
-var modal = document.getElementById("myModal");
+var video = document.querySelector("#video-webcam");
 
 function lihat() {
+    video.style.display = "block";
     kerjakan.style.display = "block";
     CBT.style.display = "block";
     petunjuk.hidden = "true";
 }
+
 
 window.onclick = function(event) {
   if (event.target == modal) {
