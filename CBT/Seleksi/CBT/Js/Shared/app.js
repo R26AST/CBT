@@ -391,8 +391,8 @@ function daftar(){
     var instructionPar = document.querySelector("#instructions");
         instructionPar.innerHTML = `<h3 style="color: #3C91E6; fontWeight: 700">Daftar Konstanta Astronomi</h3>`;
         //instructionPar.innerHTML += `<embed src="CBT/tabel/Tabel-OSN-Astronomi.pdf" frameborder="0" width="100%" height="700px" />`;
-		instructionPar.innerHTML += `<img src="CBT/tabel/Tabel-OSN-Astronomi1.png" width="100%"/>
-									 <img src="CBT/tabel/Tabel-OSN-Astronomi2.png" width="100%"/>`;
+		instructionPar.innerHTML += `	<img src="CBT/tabel/Tabel-OSN-Astronomi1.png" width="100%"/>
+						<img src="CBT/tabel/Tabel-OSN-Astronomi2.png" width="100%"/>`;
 									 
 		document.getElementById("questionsButton").style.display = "none";
  
@@ -442,14 +442,18 @@ function submitExam(){
 										<input type="text" id="nilai" name="Nilai" readonly="readonly"> <br>
 										<center>
 											<button type="submit" class="kirim" onclick="simpanData()">
-											<span>Kirim</span>
+												<span>Kirim</span>
 											</button>
 										</center> <br>
 																			
 									</form>
 	`;
-    document.querySelector(".total").innerHTML = "Total Skor: " + score.toString();
-    document.getElementById("nilai").value = score;
+   	document.querySelector(".total").innerHTML = "Total Skor: " + score.toString();
+    	document.getElementById("nilai").value = score;
+
+	if (document.getElementById("nama").value === null && document.getElementById("kelas").value === null) {
+		document.getElementsByClassName("kirim").style.cursor = "not-allowed";
+	}
 }
 
 function stopWebcam(e) {
