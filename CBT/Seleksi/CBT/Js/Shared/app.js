@@ -451,10 +451,10 @@ function submitExam(){
    	document.querySelector(".total").innerHTML = "Total Skor: " + score.toString();
     	document.getElementById("nilai").value = score;
 
-	if (document.getElementById("nama").value === null && document.getElementById("kelas").value === null) {
-		document.getElementsByClassName("kirim").style.display = "none";
-	} else {
+	if (document.getElementById("nama").value != "" && document.getElementById("kelas").value != "") {
 		document.getElementsByClassName("kirim").style.display = "block";
+	} else {
+		document.getElementsByClassName("kirim").style.display = "none";
 	}
 }
 
