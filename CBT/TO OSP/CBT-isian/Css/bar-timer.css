@@ -1,0 +1,13 @@
+.card-indicator {
+    margin: .7rem 0rem;
+    height: 10px;
+    border-radius: 4px;
+    background: #e9edf2;
+    overflow: hidden;
+}
+
+.indicator {
+  height: 10px;
+  border-radius: 4px;
+  background: #22baa0;
+}

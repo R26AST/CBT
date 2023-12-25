@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id" translate="no">
+<head>
+	<meta name="google" content="notranslate" />
+    <title>Reset Nilai</title>
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/>
+    <link href="./styles/style.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>     
+
+</head>
+<body>
+	<center>
+	<div class="kata" id="kata" >
+		<h3>Silakan menekan tombol berikut untuk me-<i>reset</i> nilai</h3>
+		<button type="button" id="reset" class="reset" onclick="reset()"><i>Reset</i></button>
+	</div>
+	</center>
+
+		<div class="popup" id="success" hidden>
+			<div class="popup-content">
+				<div class="imgbox">
+					<img src="checked.png" alt="" class="img">
+				</div>
+				<div class="title">
+					<h3>Berhasil!</h3>
+				</div>
+				<p class="para"><i>Reset</i> nilai berhasil</p>
+				<form action="">
+					<p class="button" id="s_button">OKE</p>
+				</form>
+			</div>
+		</div>
+	
+    
+	<script>
+		var success_popup = document.getElementById("success");
+		var s_close = document.getElementById("s_button");
+		
+		var timer;
+		
+        function reset() {
+			localStorage.removeItem("nilai");
+			success_popup.style.display = "block";
+			document.getElementById("kata").style.display = "none";
+			document.body.style.backgroundColor = "gainsboro";
+			
+			timer = setTimeout(popUp, 3000);
+		}
+
+
+		s_close.onclick = function(){
+			clearTimeout(timer);
+			document.getElementById("kata").style.display = "block";
+			success_popup.style.display = "none";
+			document.body.style.backgroundColor = "white";
+		}
+		
+		function popUp () {
+				//success_popup.style.display = "none";
+				document.getElementById("kata").style.display = "block";
+				success_popup.style.display = "none";
+				document.body.style.backgroundColor = "white";
+			}
+
+    </script>
+</body>
+</html>

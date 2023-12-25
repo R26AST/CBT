@@ -1,0 +1,23 @@
+#video-webcam {
+  max-height: 50px;
+  bottom: 5px;
+  right: 0;
+  position: absolute;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border: 2px solid #326091;
+  border-radius: 7px;
+}    
+
+@media only screen and (min-width: 1200px) {
+    #video-webcam {
+        max-height: 70px;
+        bottom: -10px;
+        left: 65px;
+        position: absolute;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border: 4px solid #326091;
+        border-radius: 10px;
+   }
+}
