@@ -429,55 +429,24 @@ function submitExam(){
             score++;
         }    
     }
-    
-   
-
-    //score = score/0.4;
-    /*
-    let nilai = score.toString();
-    let users = sessionStorage.getItem("user");
-    if(users == 0) {
-        //setCookie(nilai0, nilai);
-       Cookies.set('data0', 'true');
-        sessionStorage.setItem("nilai0", score);
-    }
-    else if(users == 1) {
-        sessionStorage.setItem("nilai1", score);
-    }
-    else if(users == 2) {
-        sessionStorage.setItem("nilai2", score);
-    }
-    else if(users == 3) {
-        sessionStorage.setItem("nilai3", score);
-    }
-    else if(users == 4) {
-        sessionStorage.setItem("nilai4", score);
-    }
-    else if(users == 5) {
-        sessionStorage.setItem("nilai5", score);
-    }
-    else {
-        sessionStorage.setItem("nilai6", "0");
-    }
-    */
-    
+  
     document.querySelector(".daftar").style.display = "none";
     document.querySelector(".pSubmit").style.display = "none";
     document.querySelector(".content > div:last-child > div").innerHTML = `Anda telah selesai mengerjakan ujian <br><br>Silakan mengisi data berikut dengan menggunakan <b>huruf kapital</b>: <br><br>
 	
-																			<form action="https://script.google.com/macros/s/AKfycbyfknnVjdkfS7GUZ5O-Hy8HY4X47DJkHl2i1loDuDNBQx0GE18KCZxbP0NF-41dcuSVkA/exec"  method="POST" autocomplete="on">																			
+									<form action="https://script.google.com/macros/s/AKfycbyfknnVjdkfS7GUZ5O-Hy8HY4X47DJkHl2i1loDuDNBQx0GE18KCZxbP0NF-41dcuSVkA/exec"  method="POST" autocomplete="on">																			
 																				
-																				<input type="text" id="nama" name="Nama" placeholder="Nama Lengkap" style="width: 100%; height: 50px; font-size: 17px" required> <br><br>
-																				<input type="text" id="kelas" name="Kelas" placeholder="Kelas" style="width: 100%; height: 50px; font-size: 17px" required> <br><br>
-																				<input type="text" id="nisn" name="NISN" placeholder="NISN" style="width: 100%; height: 50px; font-size: 17px" required> <br><br>
-																				<input type="text" id="nilai" name="Nilai" readonly="readonly"> <br>
-																				<center>
-																					<button type="submit" class="kirim" onclick="simpanData()">
-																						<span>Kirim</span>
-																					</button>
-																				</center> <br>
+										<input type="text" id="nama" name="Nama" placeholder="Nama Lengkap" style="width: 100%; height: 50px; font-size: 17px" required> <br><br>
+										<input type="text" id="kelas" name="Kelas" placeholder="Kelas" style="width: 100%; height: 50px; font-size: 17px" required> <br><br>
+										<input type="text" id="nisn" name="NISN" placeholder="NISN" style="width: 100%; height: 50px; font-size: 17px" required> <br><br>
+										<input type="text" id="nilai" name="Nilai" readonly="readonly"> <br>
+										<center>
+											<button type="submit" class="kirim" onclick="simpanData()">
+											<span>Kirim</span>
+											</button>
+										</center> <br>
 																			
-																			</form>
+									</form>
 	`;
     document.querySelector(".total").innerHTML = "Total Skor: " + score.toString();
     document.getElementById("nilai").value = score;
