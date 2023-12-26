@@ -429,7 +429,8 @@ function submitExam(){
             score++;
         }    
     }
-  
+
+    document.querySelector(".instructionLink").style.display = "none";
     document.querySelector(".daftar").style.display = "none";
     document.querySelector(".pSubmit").style.display = "none";
     document.querySelector(".content > div:last-child > div").innerHTML = `Anda telah selesai mengerjakan ujian <br><br>Silakan mengisi data berikut dengan menggunakan <b>huruf kapital</b>: <br><br>
