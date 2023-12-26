@@ -441,7 +441,7 @@ function submitExam(){
 										<input type="text" id="nisn" name="NISN" placeholder="NISN" style="width: 100%; height: 50px; font-size: 17px" required> <br><br>
 										<input type="text" id="nilai" name="Nilai" readonly="readonly"> <br>
 										<center>
-											<button type="submit" class="kirim" onclick="simpanData()">
+											<button type="submit" class="kirim" onclick="simpanData()" style="display: none">
 												<span>Kirim</span>
 											</button>
 										</center> <br>
@@ -451,16 +451,27 @@ function submitExam(){
    	document.querySelector(".total").innerHTML = "Total Skor: " + score.toString();
     	document.getElementById("nilai").value = score;
 
-	document.getElementById("nama").value.addEventListener('change', () => {
-	if (document.getElementById("nama").value != "" && document.getElementById("kelas").value != "") {
-		document.querySelector(".kirim").style.display = "block";
-	} else {
-		document.querySelector(".kirim").style.display = "none";
-	}
-	});
-	if (document.getElementById("nama").value == "" && document.getElementById("kelas").value == ""){
-	        document.querySelector(".kirim").style.display = "none";
-	}
+	var nama = document.getElementById("nama");
+        var kelas = document.getElementById("kelas");
+        let btn = document.querySelector(".kirim");
+  
+        nama.addEventListener('change', () => {
+           if (nama.value != "" && kelas.value != "" && nama.value != " " && kelas.value != " ") {
+               btn.style.display = "block";
+           }
+           else btn.style.display = "none";
+        });
+  
+        kelas.addEventListener('change', () => {
+           if (kelas.value != "" && kelas.value != " ") {
+              btn.style.display = "block";
+           }
+           else btn.style.display = "none";
+        });
+    
+        if (nama.value != "" && kelas.value != "") {
+           btn.style.display = "block";
+        }
 }
 
 function stopWebcam(e) {
