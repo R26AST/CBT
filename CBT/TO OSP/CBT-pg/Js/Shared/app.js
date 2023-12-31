@@ -40,7 +40,7 @@ var exam = {
             "answerPosition": 1
         },
         {
-            "question": "Perhatikan spektrum galaksi di bawah ini! <br> <br> <center><img src='CBT-pg/Images/grafik1.jpg' class='fotoSoal'/></center> <br>Perkirakanlah kecepatan radial dari galaksi tersebut jika kecepatan cahaya = 3 × 10<sup>5</sup> km/s.",
+            "question": "Perhatikan spektrum galaksi di bawah ini! <br> <br> <img src='CBT-pg/Images/grafik1.jpg' class='fotoSoal'/> <br>Perkirakanlah kecepatan radial dari galaksi tersebut jika kecepatan cahaya = 3 × 10<sup>5</sup> km/s.",
             "options": ["5,533 × 10<sup>4</sup> km/s", "2,790 × 10<sup>4</sup> km/s", "6,154 × 10<sup>4</sup> km/s", "3,154 × 10<sup>4</sup> km/s", "2,385 × 10<sup>5</sup> km/s"],
             "answerPosition": 0
         },
