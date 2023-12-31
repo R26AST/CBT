@@ -516,9 +516,9 @@ label {
 
 label .teks {
     color: #333;
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 7px;
     transition: color 0.3s ease;
 }
 
@@ -572,7 +572,14 @@ input[type="radio"] {
 	#opsi4:checked ~ .opsi4 .dot::before {
 		background: #2196F3;
 		transform: translate(-50%, -50%) scale(1);
+	}
 	
+	label .teks {
+                color: #333;
+                font-size: 18px;
+                font-weight: 400;
+                padding-left: 10px;
+                transition: color 0.3s ease;
 	}
 }
 
