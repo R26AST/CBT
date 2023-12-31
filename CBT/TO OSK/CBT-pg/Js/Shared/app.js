@@ -29,7 +29,7 @@ var exam = {
 							<br>
 							<br>Massa Bumi = 5,97 × 10<sup>24</sup> kg
 							<br>Radius Bumi  = 6,378 × 10<sup>6</sup> m
-							<br>Massa Jupiter = 1,898 × 10<sup>28</sup> kg
+							<br>Massa Jupiter = 1,898 × 10<sup>27</sup> kg
 							<br>Radius Jupiter = 6,99 × 10<sup>7</sup> m
 							<br>Konstanta Gravitasi = 6,673 × 10<sup>-11</sup> N kg<sup>-2</sup> m<sup>2</sup>`,
             "options": ["50 N", "100 N", "132 N", "152 N", "173 N"],
