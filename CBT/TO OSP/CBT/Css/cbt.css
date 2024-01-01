@@ -194,6 +194,11 @@
   margin-bottom: 12px;
 }
 
+.fotoSoal {
+    width: 100%;
+    align-items: center;
+}
+
 .greenHightlight{
   background-color: green;
   /*background-color: #428bca;*/
