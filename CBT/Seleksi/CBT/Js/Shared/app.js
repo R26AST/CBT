@@ -332,6 +332,25 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
+window.addEventListener("load", () => {
+  // (A) Target just this section
+  var target = questionDiv;
+ 
+  // (B) Prevents the right-click menu from opening
+  target.addEventListener("contextmenu", (evt) => {
+    evt.preventDefault();
+  }, false);
+ 
+  // (C) Changes the copy on the clipboard
+  target.addEventListener("copy", (evt) => {
+    // (C1) Change the text of the copy if you want
+    evt.clipboardData.setData("text/plain", "Anda dilarang untuk menyalin teks dari website.");
+ 
+    // (C2) Prevents default copy action
+    evt.preventDefault();
+  }, false);
+});
+
 function hapus() {
     var questionOptions = document.querySelectorAll("#optionDiv > input");
     //var ele = document.querySelectorAll("input[type=radio]")[hps];
