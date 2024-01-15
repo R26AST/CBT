@@ -2,7 +2,7 @@ let kerjakan = document.getElementById("kerjakan");
 let pedoman = document.getElementById("pedoman");
 let petunjuk = document.getElementById("petunjuk");
 let CBT = document.getElementById("CBT");
-var video = document.querySelector("#video-webcam");
+//var video = document.querySelector("#video-webcam");
 
 function lihat() {
     //video.style.display = "block";
