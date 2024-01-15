@@ -334,7 +334,7 @@ document.addEventListener("keydown", function (e) {
 
 window.addEventListener("load", () => {
   // (A) Target just this section
-  var target = questionDiv;
+  var target = document.getElementById("questionDiv");
  
   // (B) Prevents the right-click menu from opening
   target.addEventListener("contextmenu", (evt) => {
