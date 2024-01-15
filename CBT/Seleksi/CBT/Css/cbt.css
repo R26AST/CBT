@@ -137,9 +137,15 @@
     border: 1px solid #d9d9d9;
 }
 
-#questionDiv { user-select: none; }
-#questionDiv::selection { background: none; }
-#questionDiv::-moz-selection { background: none; }
+#questionDiv { 
+	user-select: none;
+	-ms-user-select: none;
+	-o-user-select:none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
 
 @media (max-width: 600px) {
   #questionDiv {
@@ -168,7 +174,7 @@
 
 .content > div:first-child > div img{
   width: 150px;
-  border: 1px solid #f2f2f2;
+  bor: 1px solid #f2f2f2;
 }
 
 .qbtn{
