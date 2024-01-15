@@ -419,7 +419,7 @@ function promptUser(){
 }
 
 function submitExam(){
-    video.style.display = "none";
+    //video.style.display = "none";
     stopWebcam();
     clearInterval(timerObject);
     modal.style.display = "none";
