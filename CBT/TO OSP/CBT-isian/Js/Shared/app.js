@@ -312,7 +312,7 @@ function cekJawaban() {
     }
 	
 	//NOMOR 4
-	if(jawaban4A >= 1,27E-2 && jawaban4A <= 1.56E-2) {
+	if(jawaban4A >= 1.7E-2 && jawaban4A <= 1.56E-2) {
       score += 5;
     }
 	if(jawaban4B >= 2.54E-2 && jawaban4B <= 3.12E-2) {
