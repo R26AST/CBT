@@ -275,9 +275,9 @@ function showQuestion(questionNumber){
     //questionDiv.innerHTML = '<b>Soal Nomor '+ (questionNumber + 1).toString() +'.</b><br><br>'+ exam.questions[questionNumber].question ;
     window.addEventListener("load", () => {
 	    // (A) Target just this section
-	    var target = questionDiv;
+	    var target = document.getElementById("questionDiv");
 
-	    questionDiv.innerHTML = '<b>Soal Nomor '+ (questionNumber + 1).toString() +'.</b><br><br>'+ exam.questions[questionNumber].question ;
+	    target.innerHTML = '<b>Soal Nomor '+ (questionNumber + 1).toString() +'.</b><br><br>'+ exam.questions[questionNumber].question ;
 	    
 	    // (B) Prevents the right-click menu from opening
 	    target.addEventListener("contextmenu", (evt) => {
