@@ -5,7 +5,7 @@ let CBT = document.getElementById("CBT");
 var video = document.querySelector("#video-webcam");
 
 function lihat() {
-    video.style.display = "block";
+    //video.style.display = "block";
     kerjakan.style.display = "block";
     CBT.style.display = "block";
     petunjuk.hidden = "true";
