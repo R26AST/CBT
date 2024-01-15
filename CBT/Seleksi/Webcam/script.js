@@ -18,15 +18,15 @@ if (navigator.getUserMedia) {
 function handleVideo(stream) {
     //video.style.display = "block";
     video.srcObject = stream;
-	document.getElementById("izin-webcam").style.display = "none";
+	//document.getElementById("izin-webcam").style.display = "none";
 	document.getElementById("tombol-lanjutkan").disabled = false;
 }
 
 // fungsi ini akan dieksekusi kalau user menolak izin
 function videoError(e) {
     alert("Izinkan menggunakan webcam!");
-	document.getElementById("izin-webcam").style.display = "block";
-	document.getElementById("lanjutkan").hidden = "true";
-	document.getElementById("tombol-lanjutkan").disabled = true;
+	//document.getElementById("izin-webcam").style.display = "block";
+	//document.getElementById("lanjutkan").hidden = "true";
+	//document.getElementById("tombol-lanjutkan").disabled = true;
 }
 
