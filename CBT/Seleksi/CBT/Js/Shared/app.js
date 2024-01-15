@@ -272,8 +272,8 @@ function runTimer(){
 
 
 function showQuestion(questionNumber){
-    //questionDiv.innerHTML = '<b>Soal Nomor '+ (questionNumber + 1).toString() +'.</b><br><br>'+ exam.questions[questionNumber].question ;
-    //window.addEventListener("load", () => {
+    questionDiv.innerHTML = '<b>Soal Nomor '+ (questionNumber + 1).toString() +'.</b><br><br>'+ exam.questions[questionNumber].question ;
+    /*window.addEventListener("load", () => {
 	    // (A) Target just this section
 	    var target = document.getElementById("questionDiv");
 
@@ -291,7 +291,7 @@ function showQuestion(questionNumber){
 		    // (C2) Prevents default copy action
 		    evt.preventDefault();
 	    }, false);
-    //});
+    });*/
 	
     optionDiv.innerHTML = "";
     x = questionNumber;
