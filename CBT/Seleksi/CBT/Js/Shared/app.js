@@ -420,7 +420,7 @@ function promptUser(){
 
 function submitExam(){
     //video.style.display = "none";
-    stopWebcam();
+    //stopWebcam();
     clearInterval(timerObject);
     modal.style.display = "none";
     score = 0;
@@ -475,7 +475,7 @@ function submitExam(){
         }
 }
 
-function stopWebcam(e) {
+/*function stopWebcam(e) {
   var stream = video.srcObject;
   var tracks = stream.getTracks();
 
@@ -485,7 +485,7 @@ function stopWebcam(e) {
   }
 
   video.srcObject = null;
-}
+}*/
 
 function simpanData(){
     localStorage.setItem('nilai', score);
