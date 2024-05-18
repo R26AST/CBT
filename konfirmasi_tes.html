@@ -257,8 +257,8 @@
 		jam = d.getHours(),
 		menit = d.getMinutes();
 	
-	let waktu = "(tgl < 10 ? '0' : '') + tgl + "/" + (bln < 10 ? '0' : '') + bln + "/" + thn + " " + (jam < 10 ? '0' : '') + jam + ":" + (menit < 10 ? '0' : '') + menit";
-	$('#mulai_tes').prop('value', waktu);
+	let waktu = ((tgl < 10 ? '0' : '') + tgl + "/" + (bln < 10 ? '0' : '') + bln + "/" + thn + " " + (jam < 10 ? '0' : '') + jam + ":" + (menit < 10 ? '0' : '') + menit);
+	$('#mulai_tes').attr('value', waktu);
 	
     function preventBack() { 
         window.history.forward();  
