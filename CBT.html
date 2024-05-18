@@ -3071,7 +3071,7 @@
 	
 	function methodThatReturnsAPromise(i,jawaban) {
 		return new Promise((resolve, reject) => {
-			$.post( "https://r26ast.github.io/save_jawaban", {nomor: i,jawaban:jawaban, }, function(data) {resolve();});
+			$.post( "https://r26ast.github.io/CBT/save_jawaban", {nomor: i,jawaban:jawaban, }, function(data) {resolve();});
 			/*$.ajax({
 			type: "POST",
 			url: "https://r26ast.github.io/CBT/save_jawaban", 
