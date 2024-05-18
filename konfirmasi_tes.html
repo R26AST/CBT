@@ -250,14 +250,14 @@
 <script type="text/javascript" src="./js/jquery/jquery.min.js"></script>
   
 <script>
-	var d = new Date(),
+	let d = new Date(),
 		thn = d.getFullYear(),
 		bln = d.getMonth(),
 		tgl = d.getDate(),
 		jam = d.getHours(),
 		menit = d.getMinutes();
 	
-	waktu = "(tgl < 10 ? '0' : '') + tgl + "/" + (bln < 10 ? '0' : '') + bln + "/" + thn + " " + (jam < 10 ? '0' : '') + jam + ":" + (menit < 10 ? '0' : '') + menit";
+	let waktu = "(tgl < 10 ? '0' : '') + tgl + "/" + (bln < 10 ? '0' : '') + bln + "/" + thn + " " + (jam < 10 ? '0' : '') + jam + ":" + (menit < 10 ? '0' : '') + menit";
 	$('#mulai_tes').prop('value', waktu);
 	
     function preventBack() { 
