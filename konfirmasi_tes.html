@@ -62,7 +62,7 @@
 					<label class="m-0 p-0"><small style="font-size:10px"><b>Status Tes</b></small></label> <input type="text" class="w-100 m-0 p-0" value="Tes Baru"  readonly="true">
 				</div>
 				<div class="mt-1">
-					<label class="m-0 p-0"><small style="font-size:10px"><b>Waktu Tes</b></small></label> <input type="text" class="w-100 m-0 p-0" name="mulai_tes" value="00/00/2024 08:00"  readonly="true">
+					<label class="m-0 p-0"><small style="font-size:10px"><b>Waktu Tes</b></small></label> <input type="text" class="w-100 m-0 p-0" name="mulai_tes" id="mulai_tes" value="00/00/2024 08:00"  readonly="true">
 				</div>
 				<div class="mt-1">
 					<label class="m-0 p-0"><small style="font-size:10px"><b>Alokasi Waktu Tes</b></small></label> 
@@ -250,7 +250,17 @@
 <script type="text/javascript" src="./js/jquery/jquery.min.js"></script>
   
 <script>
-	function preventBack() { 
+	var d = new Date(),
+		thn = d.getFullYear(),
+		bln = d.getMonth(),
+		tgl = d.getDate(),
+		jam = d.getHours(),
+		menit = d.getMinutes();
+	
+	waktu = "(tgl < 10 ? '0' : '') + tgl + "/" + (bln < 10 ? '0' : '') + bln + "/" + thn + " " + (jam < 10 ? '0' : '') + jam + ":" + (menit < 10 ? '0' : '') + menit";
+	$('#mulai_tes').val(waktu);
+	
+    function preventBack() { 
         window.history.forward();  
     } 
           
