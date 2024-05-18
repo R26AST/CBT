@@ -1,27 +1,28 @@
 [
     {
         "user": "R26Astro",
-        "password": "astronomi"
-		},
-    {
-        "id": 2,
-        "bahas": "<p><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>F</mi><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></math></p>"
+        "password": "R26AST",
+	"nama": "PUTRAKU RULIFF ABBAS"
     },
     {
-        "id": 3,
-        "bahas": "<img width='10%' src='https://latex.codecogs.com/svg.image?%5Clarge%20%20t_d=%5Csqrt%7B%5Cfrac%7B3%5Cpi%7D%7B32%5Ccdot%206,673%5Ccdot%2010%5E%7B-11%7D%5Ccdot%5Cfrac%7B200%7D%7B10%5E%7B-6%7D%7D%5Ccdot%201,6735%5Ccdot%2010%5E%7B-27%7D%7D%7D'/>"
+        "user": "AST001",
+        "password": "astr2601"
+    },
+    {
+        "user": "AST002",
+        "bahas": "astr2602"
     }
     ,
     {
-        "user": "admin",
-        "password": "tes"
+        "user": "AST003",
+        "password": "astr2603"
     },
     {
-        "id": 5,
-        "bahas": "Product 5"
+        "id": "AST004",
+        "bahas": "astr2604"
     },
     {
-        "id": 6,
-        "bahas": "Product 6"
+        "id": "AST005",
+        "bahas": "astr2605"
     }
 ]
