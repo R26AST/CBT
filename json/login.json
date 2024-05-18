@@ -1,7 +1,7 @@
 [
     {
         "user": "R26Astro",
-        "pass": "astronomi"
+        "password": "astronomi"
 		},
     {
         "id": 2,
@@ -13,8 +13,8 @@
     }
     ,
     {
-        "id": 4,
-        "bahas": "tes"
+        "user": "admin",
+        "password": "tes"
     },
     {
         "id": 5,
