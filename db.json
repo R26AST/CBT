@@ -6,7 +6,9 @@
     }
   ],
   "save_jawaban": [
-    "nomor": "1",
-    "jawaban": "A"
+    {
+      "nomor": "1",
+      "jawaban": "A"
+    }
   ]
 }
