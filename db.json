@@ -5,8 +5,8 @@
       "title": "hello"
     }
   ],
-  "save_jawaban": {
-    "nomor": "",
-    "jawaban": ""
-  }
+  "save_jawaban": [
+    "nomor": "1",
+    "jawaban": "A"
+  ]
 }
