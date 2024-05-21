@@ -8,8 +8,15 @@
   "save_jawaban": [
     {
       "id": 1,
-      "nomor": ,
-      "Jawaban": 
+      "nomor": "0",
+      "jawaban": "0"
+    }
+  ],
+  "save_ragu": [
+    {
+      "id": 1,
+      "nomor": "0",
+      "jawaban": "0"
     }
   ]
 }
