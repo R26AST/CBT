@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<title>Simulasi OSN-K</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/R26.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/R26.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/R26.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid text-white" style="background:#326698;background-size: contain;background-image: url('https://pusmendik.kemdikbud.go.id/an/images/bg-top.png');background-repeat: no-repeat;background-position: left; height:150px;position:fixed;top:0px;left:0px;right:0px">
+	  <div class="row">
+		<div class="col pl-5 pt-1">
+			<table>
+				<tr>
+					<td>
+						<img style="margin:5px;height:70px;margin-top:10px" src="./images/R26.png">
+					</td>
+					<td>
+						<div><b>R26</b></div>
+						<div><small>APLIKASI SIMULASI OSN-K<small></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col pl-5 pt-1 mt-4 pr-5 text-right">
+			<table align="right">
+				<tr>
+					<td style="vertical-align:top">
+						<div><small>Astronomi - <script>document.write(localStorage.getItem('user'))</script><small></div>
+					</td>
+					<td>
+						<div class="pl-1 pr-1 pt-1 pb-1" style="background:#74b9ff;border-radius:2px;color:#326698"><i class="fa fa-graduation-cap fa-flip-horizontal"></i></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	  </div>
+</div>
+
+<div class="container-fluid fadeInDown pl-5 pr-5 mb-5" style="margin-top:100px;">
+  <div class="row">
+	<div class="col-sm-8" >
+		<div class="text-left pl-5 pt-3 pb-5 mb-2" id="formContent" style="background-size: 300px;background-image: url('https://pusmendik.kemdikbud.go.id/an/images/logo-w.png');background-repeat: no-repeat;background-position: top right; ">
+		  <div> Token : <span class="mr-3" id="token"></span> <button class="btn btn-primary btn-round btn-sm" onClick="refreshToken();">Refresh</button></div>
+		</div>
+	</div>
+	<div class="col-sm-4" >
+		<div class="fadeIn text-left pl-5 pt-3 pb-5 pr-5" id="formContent" style="background-size: 300px;background-image: url('https://pusmendik.kemdikbud.go.id/an/images/logo-w.png');background-repeat: no-repeat;background-position: top right; ">
+		  <div style="font-size:26px">Konfirmasi Data Peserta</div>
+		  <form class="text-left" action="" method="post" id="formKonfirmasi">
+				<div class="mt-1">
+					<label class="m-0 p-0"><small style="font-size:10px"><b>Username</b></small></label> <!-- <input type="text" class="w-100 m-0 p-0" placeholder="Peserta 01" value="P130100230 - Peserta 01" readonly="true"> -->
+					<input type="text" class="w-100 m-0 p-0" placeholder="Username" id="user" value="" readonly="true">
+				</div>
+				<div class="mt-1">
+					<label class="m-0 p-0"><small style="font-size:10px"><b>Mata Ujian</b></small></label> <input type="text" class="w-100 m-0 p-0" value="Astronomi - SMA/MA" readonly="true">
+				</div>
+				<div class="mt-1">
+					<label class="m-0 p-0"><small style="font-size:10px"><b>Nama Peserta</b></small></label> <input type="text" class="w-100 m-0 p-0" placeholder="Ketikkan Nama Peserta" required="true" name="nama_peserta" id="nama_peserta">
+				</div>
+				<div class="mt-1">
+					<label class="m-0 p-0 text-primary"><small style="font-size:10px"><b>Token</b></small></label> 
+					<input type="text" class="w-100 m-0 p-0" placeholder="Ketikkan token di sini"  id="input-token" name="token" required="true">
+				</div>
+			  <button type="button" class="btn btn-primary btn-round form-control mt-5" onClick="konfirmasiData()" id="btnSubmit">Submit</button>
+			</form> 
+		</div>
+    </div>
+	 
+  </div> 
+</div>
+
+<div  style="position:absolute;top:0px;left:0px;right:0px;bottom:0px;background:#fff;opacity:0.5;z-index:99999;display:none" id="loader">
+<img class="loader" src="./images/loader.gif">
+</div>
+
+<style>
+
+	
+	/* STRUCTURE */
+	.loader {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	
+	.wrapper {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column; 
+	  justify-content: center;
+	  width: 100%;
+	  min-height: 100%;
+	  padding: 20px;
+	  margin-top:-80px;
+	}
+
+	#formContent {
+	  -webkit-border-radius: 10px 10px 10px 10px;
+	  border-radius: 10px 10px 10px 10px;
+	  background: #fff;
+	  position: relative;
+	  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+	  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+	  text-align: center;
+	}
+
+	
+
+
+	/* TABS */
+
+	h2.inactive {
+	  color: #cccccc;
+	}
+
+	h2.active {
+	  color: #0d0d0d;
+	  border-bottom: 2px solid #5fbae9;
+	}
+	
+	input[type=text] {
+	  border: none;
+	  color: #0d0d0d;
+	  text-decoration: none;
+	  border-radius:0px;
+	  border-bottom:1px solid #eee;
+	  background:transparent;
+	}
+	
+	.jenis_kelamin {
+	  border: none;
+	  color: #0d0d0d;
+	  text-decoration: none;
+	  border-radius:0px;
+	  border-bottom:1px solid #eee;
+	  background:transparent;
+	  padding-left:0px;
+	}
+	
+
+	/* ANIMATIONS */
+
+	/* Simple CSS3 Fade-in-down Animation */
+	.fadeInDown {
+	  -webkit-animation-name: fadeInDown;
+	  animation-name: fadeInDown;
+	  -webkit-animation-duration: 1s;
+	  animation-duration: 1s;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+
+	@-webkit-keyframes fadeInDown {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	  }
+	  100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	  }
+	}
+
+	@keyframes fadeInDown {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	  }
+	  100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	  }
+	}
+
+	/* Simple CSS3 Fade-in Animation */
+	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+	.fadeIn {
+	  opacity:0;
+	  -webkit-animation:fadeIn ease-in 1;
+	  -moz-animation:fadeIn ease-in 1;
+	  animation:fadeIn ease-in 1;
+
+	  -webkit-animation-fill-mode:forwards;
+	  -moz-animation-fill-mode:forwards;
+	  animation-fill-mode:forwards;
+
+	  -webkit-animation-duration:1s;
+	  -moz-animation-duration:1s;
+	  animation-duration:1s;
+	}
+
+	.fadeIn.first {
+	  -webkit-animation-delay: 0.4s;
+	  -moz-animation-delay: 0.4s;
+	  animation-delay: 0.4s;
+	}
+
+	.fadeIn.second {
+	  -webkit-animation-delay: 0.6s;
+	  -moz-animation-delay: 0.6s;
+	  animation-delay: 0.6s;
+	}
+
+	.fadeIn.third {
+	  -webkit-animation-delay: 0.8s;
+	  -moz-animation-delay: 0.8s;
+	  animation-delay: 0.8s;
+	}
+
+	.fadeIn.fourth {
+	  -webkit-animation-delay: 1s;
+	  -moz-animation-delay: 1s;
+	  animation-delay: 1s;
+	}
+
+	/* Simple CSS3 Fade-in Animation */
+	.underlineHover:after {
+	  display: block;
+	  left: 0;
+	  bottom: -10px;
+	  width: 0;
+	  height: 2px;
+	  background-color: #56baed;
+	  content: "";
+	  transition: width 0.2s;
+	}
+
+	.underlineHover:hover {
+	  color: #0d0d0d;
+	}
+
+	.underlineHover:hover:after{
+	  width: 100%;
+	}
+</style>
+
+<script>
+	$('#user').val(localStorage.getItem('user'));
+	generate_token();
+	
+	var token;
+	
+	function generate_token(){
+		let length = 7;
+		var a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".split("");
+		var b = [];  
+		for (var i = 0; i < length; i++) {
+			var j = (Math.random() * (a.length-1)).toFixed(0);
+			b[i] = a[j];
+		}
+		token = b.join("");
+		$('#token').html(token);
+	}
+	
+	function refreshToken() {
+		$('#token').html('<i>Mengambil Token</i>');
+		setTimeout(function() {
+			generate_token();
+		}, 500);
+		/*$.ajax({ 
+			   type: "POST",
+			   dataType: "html",
+			   data : '',
+			   url: "https://pusmendik.kemdikbud.go.id/an/simulasi_akm/refreshtoken?ses_id=b1c678a24056d81fb753407d2ae33f4816677225",
+			   cache: false, 
+			   beforeSend: function(){
+				   $('#token').html('<i>Mengambil Token</i>');
+				},
+				complete: function(){
+				},
+				success: function(result){
+					$('#token').html('Token : '+result);
+			   }
+			});	*/
+	}
+	console.log(token);
+	function konfirmasiData() {
+		
+		if ($('#nama_peserta').val() == '') {
+			alert('Silakan ketikkan nama!');
+			$('#nama_peserta').focus();
+		}
+		else  if ($('#input-token').val() == '') {
+			alert('Silakan ketikkan token!');
+			$('#input-token').focus();
+		} 
+		else {
+			$('#btnSubmit').html('Silahkan tunggu ... !');
+			$('#btnSubmit').prop('disabled', true);
+			
+			setTimeout(function() {
+				if ($('#input-token').val() == token) {
+					localStorage.setItem('nama_peserta', $('#nama_peserta').val());
+					$('#loader').fadeIn();
+					setTimeout(function() {window.location.replace('konfirmasi_tes.html');}, 500);
+				}
+				else {
+					alert('Token salah!');
+					$('#loader').fadeOut();
+					$('#input-token').val('');
+					generate_token();
+					$('#btnSubmit').html('Submit');
+					$('#btnSubmit').prop('disabled',false);
+					$('#btnSubmit').prop('enabled',true);
+				}
+			}, 500);
+		}
+	}
+</script>
+  
+
+</body>
+</html>
