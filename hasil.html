@@ -1,0 +1,683 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<title>Reviu Hasil Simulasi OSN-K</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/R26.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/R26.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/R26.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB3NLM7RX6"></script>
+	<!--<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-BB3NLM7RX6');
+	</script>-->
+</head>
+<body>
+
+<div class="container-fluid text-white" style="background:#326698;background-size: contain;background-image: url('./images/bg-top.png');background-repeat: no-repeat;background-position: left; height:150px;position:fixed;top:0px;left:0px;right:0px">
+	  <div class="row">
+		<div class="col pl-5 pt-1">
+			<table>
+				<tr>
+					<td>
+					<img style="margin:5px;height:70px;margin-top:10px" src="./images/R26.png">
+					</td>
+					<td>
+						<div><b>R26</b></div>
+						<div><small>APLIKASI SIMULASI OSN-K<small></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col pl-5 pt-1 mt-4 pr-5 text-right">
+			<table align="right">
+				<tr>
+					<td style="vertical-align:top">
+						<div><small><script>document.write(localStorage.getItem('user'))</script> &ndash; <script>document.write(localStorage.getItem('nama_peserta'))</script><small></div>
+					</td>
+					<td>
+						<div class="pl-1 pr-1 pt-1 pb-1" style="background:#74b9ff;border-radius:2px;color:#326698"><i class="fa fa-graduation-cap fa-flip-horizontal"></i></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	  </div>
+</div>
+
+<div class="container-fluid fadeInDown mb-5" style="margin-top:100px;">
+  <div class="row">
+	<div class="col-sm-12" >
+		<div class="text-left pl-3 pr-3 pt-3 pb-5 mb-2" id="formContent" style="background-size: 300px;background-image: url('https://simulasi-tes.bppp.kemdikbud.go.id/images/logo-w.png');background-repeat: no-repeat;background-position: top right; ">
+		  <h2 class="text-center"> Reviu Hasil
+		  </h2>
+		  <div class="text-center" style="font-size:26pt"><small>OSN Astronomi</small></div><br/>
+		  <div class="text-center" style="font-size:20pt"><small>Skor : <span id="skor">00</span> / 40</small></div>
+		  <div class="table-responsive mt-2">
+			<table class="table table-bordered table-hover table-striped">
+			<thead>
+				<tr class="bg-primary text-white">
+					<th style="width:50px" class="text-center">No.</th>
+					<th class="text-center" style="width:250px">Jawaban <span class="d-sm-none"><br/></span> Kamu</th>
+					<th class="text-center" style="width:250px">Kunci <span class="d-sm-none"><br/></span> Jawaban</th>
+					<th class="text-center" style="width:100px">Pembahasan <span class="d-sm-none"><br/></span></th>
+				</tr>
+			</thead>
+			<tbody>
+									<tr> 
+						<td class="text-center">1.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor1'));</script>) </td>
+							<td class="text-left">(C) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>44240 km dan 25,75 jam</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('1')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">2.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor2'));</script>) </td>
+							<td class="text-left">(C) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Bintang A lebih panas 1,5 kali daripada bintang B</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('2')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">3.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor3'));</script>) </td>
+							<td class="text-left">(D) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>5,5 pc</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('3')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">4.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor4'));</script>) </td>
+							<td class="text-left">(D) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?3,0\times&space;10^{9}" title="3,0\times 10^{9}" /> kali ledakan bom atom Hiroshima</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('4')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">5.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor5'));</script>) </td>
+							<td class="text-left">(B) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>0,75′</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('5')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">6.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor6'));</script>) </td>
+							<td class="text-left">(C) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>7 derajat</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('6')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">7.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor7'));</script>) </td>
+							<td class="text-left">(C) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>2</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('7')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">8.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor8'));</script>) </td>
+							<td class="text-left">(D) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Pernyataan salah dan sebab benar</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('8')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">9.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor9'));</script>) </td>
+							<td class="text-left">(D) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>4 saja</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('9')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">10.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor10'));</script>) </td>
+							<td class="text-left">(B) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?3,6\times&amp;space;10^{-19}Joule" title=" 3,6\times 10^{-19}Joule"></p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('10')">Pembahasan</button></td>
+					</tr>
+					
+					<tr> 
+						<td class="text-center">11.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor11'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?3\times&space;10^{23}kW" title="3\times 10^{23}kW" /></p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('11')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">12.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor12'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>57,52 km/s/Mpc</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('12')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">13.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor13'));</script>) </td>
+							<td class="text-left">(A)<?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Tempat pengamatan gerhana harus dilewati antumbra Bulan</p>
+							<br/> (B) <p>Tempat pengamatan gerhana harus dilewati penumbra Bulan</p> <br />
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('13')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">14.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor14'));</script>) </td>
+							<td class="text-left">(C) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Kecepatan radial Bintang Vega sebesar <img src="https://latex.codecogs.com/svg.image?-13,77&amp;space;km/s" title="-13,77 km/s"></p>
+							<br/> (D) <p>Gerak diri Bintang Vega sebesar <img src="https://latex.codecogs.com/svg.image?327mas/tahun" title="327mas/tahun"></p> <br />
+							<br/> (E) <p>Kecepatan ruang Bintang Vega sebesar <img src="https://latex.codecogs.com/svg.image?18,27&amp;space;km/s" title="18,27 km/s"></p> <br />
+</td>						
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('14')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">15.</td> 
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor15'));</script>) </td>
+							<td class="text-left">(D) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>44 kali</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('15')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">16.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor16'));</script>) </td>
+							<td class="text-left">(B) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?2^{\circ}40'" title="2^{\circ}40'"></p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('16')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">17.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor17'));</script>) </td>
+							<td class="text-left">(E) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>42</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('17')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">18.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor18'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Seorang pada gedung yang berlainan tersebut dapat melihat roket pada interval <img src="https://latex.codecogs.com/svg.image?\frac{1}{2}\leq&amp;space;t\leq&amp;space;2" title="\frac{1}{2}\leq t\leq 2"> setelah roket ditembakkan</p> <br />
+							<br/> (C) <p>Pada saat <b>t = 4</b> detik, ketinggian roket lebih dari <b>40</b>&nbsp;<em>feet</em></p> <br />
+							<br/> (D) <p>Ketinggian maksimum roket yakni <b>102,5</b> <em>feet</em></p> <br />
+							<br/> (E) <p>Waktu yang dibutuhkan dari ketinggian maksimum hingga ke tanah dengan percepatan gravitasi <img src="https://latex.codecogs.com/svg.image?g=10m/s^{2}" title="g=10m/s^{2}"> sekitar <b>2,5</b> detik</p> <br />
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('18')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">19.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor19'));</script>) </td>
+							<td class="text-left">(E) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>1</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('19')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">20.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor20'));</script>) </td>
+							<td class="text-left">(C) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>&ndash;17,6 mag</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('20')">Pembahasan</button></td>
+					</tr>
+					
+					<tr> 
+						<td class="text-center">21.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor21'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?\large&amp;space;1\times&amp;space;10^{-27}&amp;space;kg" title="1\times 10^{-27}kg"> <img src="https://latex.codecogs.com/svg.image?\large&amp;space;m/s" title="m/s"></p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('21')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">22.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor22'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Menghabiskan sebagian besar waktunya pada jarak yang sangat jauh dari Matahari</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('22')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">23.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor23'));</script>) </td>
+							<td class="text-left">(E) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Roket yang meluncur maju ketika gas bahan bakar ditembakkan ke arah belakang roket</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('23')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">24.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor24'));</script>) </td>
+							<td class="text-left">(B) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>3,22 juta tahun</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('24')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">25.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor25'));</script>) </td>
+							<td class="text-left">(B) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Tidak ada gangguan atmosfer terhadap radiasi elektromagnetik yang diamati</p>
+							<br/> (C) <p>Diameter teleskop landas layang bisa berukuran sangat besar</p> <br />
+							<br/> (D) <p>Seluruh spektrum elektromagnetik objek langit dapat diamati</p> <br />
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('25')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">26.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor26'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Perbandingan kecepatan orbit bintang pertama dan bintang kedua adalah <img src="https://latex.codecogs.com/svg.image?\frac{2}{3}" title="\frac{2}{3}"></p>
+							<br/> (D) <p>Kedua bintang terpisah sejauh <img src="https://latex.codecogs.com/svg.image?4,55SA" title="4,55SA"></p> <br />
+							<br/> (E) <p>Jarak bintang pertama ke pusat massa sistem adalah <img src="https://latex.codecogs.com/svg.image?1,82SA" title="1,82SA"></p> <br />
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('26')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">27.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor27'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Akibat tumbukan dengan elektron, terjadi perubahan panjang gelombang</p>
+							<br/> (B) <p>Peristiwa tersebut merupakan efek fotolistrik</p> <br />
+							<br/> (C) <p>Panjang gelombang akhir setelah tumbukan adalah sebesar 0,0107 nm</p> <br />
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('27')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">28.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor28'));</script>) </td>
+							<td class="text-left">(E) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?4\times&amp;space;10^{-7}" title="4\times 10^{-7}"> meter</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('28')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">29.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor29'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Venus</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('29')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">30.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor30'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Warna Matahari berubah menjadi biru</p>
+							<br/> (D) <p>Ukuran Matahari tampak lebih kecil</p> <br />
+							<br/> (E) <p>Tampak bentuk Matahari berubah</p> <br />
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('30')">Pembahasan</button></td>
+					</tr>
+					
+					<tr> 
+						<td class="text-center">31.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor31'));</script>) </td>
+							<td class="text-left">(B) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?\large&amp;space;2\times&amp;space;10^{4}" title="2\times 10^{4}"> m</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('31')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">32.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor32'));</script>) </td>
+							<td class="text-left">(C) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?\large&amp;space;3" title="3"> parsecs</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('32')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">33.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor33'));</script>) </td>
+							<td class="text-left">(E) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p><img src="https://latex.codecogs.com/svg.image?\large&amp;space;0,76''" title="0,76''"></p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('33')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">34.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor34'));</script>) </td>
+							<td class="text-left">(B) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>16</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('34')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">35.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor35'));</script>) </td>
+							<td class="text-left">(B) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>16 mag</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('35')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">36.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor36'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>615 pc</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('36')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">37.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor37'));</script>) </td>
+							<td class="text-left">(D) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>225 Mpc</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('37')">Pembahasan</button></td>
+					</tr>
+									tr> 
+						<td class="text-center">38.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor38'));</script>) </td>
+							<td class="text-left">(D) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Energi foton berbanding lurus dengan frekuensinya</p>
+							<br/> (E) <p>Garis Fraunhofer adalah garis absorpsi dari spektrum matahari</p> <br />
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('30')">Pembahasan</button></td>
+					</tr>
+									<tr> 
+						<td class="text-center">39.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor39'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>230 juta tahun</p>
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('39')">Pembahasan</button></td>
+					</tr>
+									tr> 
+						<td class="text-center">40.</td>
+													<td class="text-left">(<script>document.write(localStorage.getItem('nomor40'));</script>) </td>
+							<td class="text-left">(A) <?xml encoding="utf-8" ?><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><!--?xml encoding="utf-8" ?--><p>Paralaks trigonometri</p>
+							<br/> (D) <p>Metode gerak gugus</p> <br />
+</td>
+												<td class="text-center" style="vertical-align:middle"><button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#infoSoal" onClick="showBahasan('30')">Pembahasan</button></td>
+					</tr>
+							</tbody>
+			</table>
+		</div>
+		<div class="row">
+			
+			<div class="col-sm-12 text-right">
+				<!--<a class="btn btn-outline-success btn-sm btn-round pull-right"  href="."><i class="fa fa-check"></i> Pilih Subtes</a>-->
+				<button class="btn btn-outline-primary btn-sm btn-round pull-right" onClick="downloadResult()" id="btn-unduh"><i class="fa fa-download"></i> Unduh Hasil</button>
+				<button class="btn btn-outline-primary btn-sm btn-round pull-right" onClick="downloadBahas()" id="btn-unduh"><i class="fa fa-download"></i> Unduh Pembahasan</button>
+				<button class="btn btn-outline-danger btn-sm btn-round pull-right"  onClick="logout()">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
+			</div>
+			<div class="col-sm-12 text-left" style="font-size:12px;margin-top:50px">
+				<div>Kontak R26 :</div>
+				<span style="padding-right:20px"><i class="fa fa-phone" style="border:1px solid #000;border-radius:50%"></i> &plus;62 857 1435 0262</span>
+				<span><i class="fa fa-desktop" ></i> r26ast.github.io</span>
+			</div>
+		</div>
+	</div>
+  </div> 
+</div>
+
+<div class="modal" id="infoSoal">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header" style="background:#dfe6e9">
+        <h5 class="modal-title">Pembahasan Soal</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body p-4 pembahasan-soal" style="min-height:100px">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div  style="position:fixed;top:0px;left:0px;right:0px;bottom:0px;background:#fff;opacity:0.5;z-index:99999;display:none" id="loader">
+<img class="loader" src="./images/loader.gif">
+</div>
+
+
+
+
+<style>
+
+	.pembahasan-soal p {
+		margin-bottom:5px;
+	}
+	
+	@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+	@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+	@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+	@media (max-width:641px)  { 
+		/* tablet, landscape iPad, lo-res laptops ands desktops */  
+		.mataujian{text-align:left} 
+		#formContent{padding-left:10px;padding-right:10px}
+		.row-atas {text-align:center;}
+	}
+	@media (min-width:641px)  { 
+		/* tablet, landscape iPad, lo-res laptops ands desktops */  
+		.container-fluid{ padding-left:50px;padding-right:50px} 
+		.mataujian{text-align:right} 
+		#formContent{padding-left:50px;padding-right:50px} 
+		.btn-navigasi {width:180px;}
+		.cont-btn-informasi{text-align:right}
+		
+	}
+	@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+	@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+	
+	/* STRUCTURE */
+	.loader {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	.wrapper {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column; 
+	  justify-content: center;
+	  width: 100%;
+	  min-height: 100%;
+	  padding: 20px;
+	  margin-top:-80px;
+	}
+
+	#formContent {
+	  -webkit-border-radius: 10px 10px 10px 10px;
+	  border-radius: 10px 10px 10px 10px;
+	  background: #fff;
+	  position: relative;
+	  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+	  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+	  text-align: center;
+	}
+
+	
+
+
+	/* TABS */
+
+	h2.inactive {
+	  color: #cccccc;
+	}
+
+	h2.active {
+	  color: #0d0d0d;
+	  border-bottom: 2px solid #5fbae9;
+	}
+	
+	input[type=text] {
+	  border: none;
+	  color: #0d0d0d;
+	  text-decoration: none;
+	  border-radius:0px;
+	  border-bottom:1px solid #eee;
+	  background:transparent;
+	}
+	
+
+	/* ANIMATIONS */
+
+	/* Simple CSS3 Fade-in-down Animation */
+	.fadeInDown {
+	  -webkit-animation-name: fadeInDown;
+	  animation-name: fadeInDown;
+	  -webkit-animation-duration: 1s;
+	  animation-duration: 1s;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+
+	@-webkit-keyframes fadeInDown {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	  }
+	  100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	  }
+	}
+
+	@keyframes fadeInDown {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	  }
+	  100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	  }
+	}
+
+	/* Simple CSS3 Fade-in Animation */
+	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+	.fadeIn {
+	  opacity:0;
+	  -webkit-animation:fadeIn ease-in 1;
+	  -moz-animation:fadeIn ease-in 1;
+	  animation:fadeIn ease-in 1;
+
+	  -webkit-animation-fill-mode:forwards;
+	  -moz-animation-fill-mode:forwards;
+	  animation-fill-mode:forwards;
+
+	  -webkit-animation-duration:1s;
+	  -moz-animation-duration:1s;
+	  animation-duration:1s;
+	}
+
+	.fadeIn.first {
+	  -webkit-animation-delay: 0.4s;
+	  -moz-animation-delay: 0.4s;
+	  animation-delay: 0.4s;
+	}
+
+	.fadeIn.second {
+	  -webkit-animation-delay: 0.6s;
+	  -moz-animation-delay: 0.6s;
+	  animation-delay: 0.6s;
+	}
+
+	.fadeIn.third {
+	  -webkit-animation-delay: 0.8s;
+	  -moz-animation-delay: 0.8s;
+	  animation-delay: 0.8s;
+	}
+
+	.fadeIn.fourth {
+	  -webkit-animation-delay: 1s;
+	  -moz-animation-delay: 1s;
+	  animation-delay: 1s;
+	}
+
+	/* Simple CSS3 Fade-in Animation */
+	.underlineHover:after {
+	  display: block;
+	  left: 0;
+	  bottom: -10px;
+	  width: 0;
+	  height: 2px;
+	  background-color: #56baed;
+	  content: "";
+	  transition: width 0.2s;
+	}
+
+	.underlineHover:hover {
+	  color: #0d0d0d;
+	}
+
+	.underlineHover:hover:after{
+	  width: 100%;
+	}
+</style>
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.js"> </script> -->
+
+<script>
+	$('#skor').html(localStorage.getItem('skor'));
+	$('#loader').fadeIn();
+
+$('document').ready(function() {
+	$('#loader').fadeOut();
+	function logout() {
+		$('#loader').fadeIn();
+		setTimeout(function() {window.location.replace("https://r26ast.github.io/Dashboard/")}, 500);
+		localStorage.clear();
+	}
+
+
+	function showBahasan(nomor) {
+		
+		$.ajax({ 
+			   type: "GET",
+			   dataType: "json",
+			   url: "https://r26ast.github.io/CBT/json/pembahasan.json",
+				beforeSend: function(){
+					$('.pembahasan-soal').html('<i class="fa fa-spinner fa-spin"></i> Silakan Tunggu...');
+				},
+				complete: function(){
+					console.log( "complete" );
+				},
+				success: function(result){
+					var cetak = result[nomor - 1].bahas;
+					$('.pembahasan-soal').html(cetak);
+					console.log( "success" );
+			   },
+			   error: function(){
+					$('.pembahasan-soal').html('<i class="fa fa-spinner fa-spin"></i> Terjadi galat...');
+					console.log( "error");
+			   }
+			});
+	}
+	
+	
+	function downloadResult() {
+		alert('Mohon maaf akses download belum tersedia');
+		/*$.ajax({ 
+			   type: "POST",
+			   dataType: "html",
+			   data : '',
+			   url: "hhttps://my-json-server.typicode.com/r26ast/CBT/post",
+			   cache: false, 
+			   beforeSend: function(){
+				   $('#btn-unduh').html('<i class="fa fa-spinner fa-spin"></i> Silahkan Tunggu...');
+				   $('#btn-unduh').prop('disabled',true);;
+				   $('#loader').fadeIn();
+				},
+				complete: function(){
+					$('#btn-unduh').html('<i class="fa fa-download"></i> Unduh Hasil');
+					$('#btn-unduh').prop('disabled',false);;
+					$('#btn-unduh').prop('enabled',true);;
+					$('#loader').fadeOut();
+				},
+				success: function(result){
+					window.location = result;
+			   }
+			});*/
+	}
+	
+	function downloadBahas() {
+		alert('Mohon maaf akses download belum tersedia');
+	}
+});
+</script>
+  
+
+</body>
+</html>
