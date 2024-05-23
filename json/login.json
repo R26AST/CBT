@@ -32,5 +32,17 @@
     {
         "id": "AST005",
         "bahas": "astr2605"
+    },
+	{
+        "id": "AST006",
+        "bahas": "astr2606"
+    },
+	{
+        "id": "AST007",
+        "bahas": "astr2607"
+    },
+	{
+        "id": "ASTEST",
+        "bahas": "astrtest"
     }
 ]
