@@ -269,31 +269,6 @@
 	$("#mulai_tes").val(waktu);
 	
 	function mulaiTes(){
-		/*$.ajax({ 
-			   type: "POST",
-			   dataType: "html",
-			   data : $('#formKonfirmasi').serialize(),
-			   url: "https://pusmendik.kemdikbud.go.id/an/simulasi_akm/verifikasites?ses_id=b1c678a24056d81fb753407d2ae33f4816677225",
-			   cache: false, 
-			   beforeSend: function(){
-				   $('#btnSubmit').html('Silahkan tunggu ...');
-				   $('#btnSubmit').prop('disabled',true);
-				   $('#loader').fadeIn();
-				},
-				complete: function(){
-				},
-				success: function(result){
-					if (result=='Token Salah !') {
-						alert(result);
-						$('#loader').fadeOut();
-					}
-					else
-						window.location = result;
-					//$('#token').html('Token : '+result);
-			   }
-			});*/
-			//window.location.href = ANBK.html;
-			//window.open('CBT.html', '_self');
 			$('#loader').fadeIn();
 			setTimeout(function() {window.location.replace('CBT.html');}, 1000);
 	}
