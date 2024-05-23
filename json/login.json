@@ -26,23 +26,23 @@
         "password": "astr2603"
     },
     {
-        "id": "AST004",
+        "user": "AST004",
         "password": "astr2604"
     },
     {
-        "id": "AST005",
+        "user": "AST005",
         "password": "astr2605"
     },
 	{
-        "id": "AST006",
+        "user": "AST006",
         "password": "astr2606"
     },
 	{
-        "id": "AST007",
+        "user": "AST007",
         "password": "astr2607"
     },
 	{
-        "id": "ASTEST",
+        "user": "ASTEST",
         "password": "astrtest"
     }
 ]
