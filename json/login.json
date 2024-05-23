@@ -18,7 +18,7 @@
     },
     {
         "user": "AST002",
-        "bahas": "astr2602"
+        "password": "astr2602"
     }
     ,
     {
@@ -27,22 +27,22 @@
     },
     {
         "id": "AST004",
-        "bahas": "astr2604"
+        "password": "astr2604"
     },
     {
         "id": "AST005",
-        "bahas": "astr2605"
+        "password": "astr2605"
     },
 	{
         "id": "AST006",
-        "bahas": "astr2606"
+        "password": "astr2606"
     },
 	{
         "id": "AST007",
-        "bahas": "astr2607"
+        "password": "astr2607"
     },
 	{
         "id": "ASTEST",
-        "bahas": "astrtest"
+        "password": "astrtest"
     }
 ]
