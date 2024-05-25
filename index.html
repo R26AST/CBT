@@ -13,7 +13,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./src/toastStyle.min.css">
 	
@@ -84,18 +84,16 @@
   </div> 
 </div>
 
-<div  style="position:absolute;top:0px;left:0px;right:0px;bottom:0px;z-index:99999;display:none" id="notifikasi">
-	<div class="toast">
-		<div class="toast-content">
-			<i class="check" id="ikon-alert"></i>
-			<div class="message">
-				<span class="text text-1" id="tipe-alert">Success</span>
-				<span class="text text-2" id="pesan-alert">Your changes has been saved</span>
-			</div>
+<div class="toast">
+	<div class="toast-content">
+		<i class="icon"></i>
+		<div class="message">
+			<span class="text text-1" id="tipe-alert">Success</span>
+			<span class="text text-2" id="pesan-alert">Your changes has been saved</span>
 		</div>
-	<i class="fa-solid fa-xmark close"></i>
-	<div class="progress"></div>
 	</div>
+<i class="fa-solid fa-xmark close"></i>
+<div class="progress"></div>
 </div>
 
 <div  style="position:absolute;top:0px;left:0px;right:0px;bottom:0px;background:#fff;opacity:0.5;z-index:99999;display:none" id="loader">
@@ -309,7 +307,7 @@
     align-items: center;
 }
 
-.toast-content .check{
+.toast-content .icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,6 +367,14 @@
     /*background-color: #4070f4;*/
 }
 
+.toast i:last-child {
+  color: #aeb0d7;
+  cursor: pointer;
+}
+.toast i:last-child:hover {
+  color: var(--dark);
+}
+
 
 @keyframes progress {
     100%{
@@ -376,12 +382,15 @@
     }
 }
 
-
+@media screen and (max-width: 530px) {
+  .toast {
+    width: 95%;
+  }
+}
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
-<script src="./src/toast.min.js"></script>
-
+<script src="./notif.js"></script>
 <script>
 	function preventBack() { 
         window.history.forward();  
@@ -394,6 +403,7 @@
 	function login() {
 		var username = $('#username').val();
 		var password = $('#password').val();
+		//$('#login-btn').prop('disabled',true);
 		
 		if (username=='') {
 			$('#username').focus();
@@ -401,6 +411,7 @@
 			$('#password').focus();
 		} else {
 			//$('#loader').fadeIn();
+			$('#login-btn').prop('disabled',true);
 			$.ajax({
 			type: 'GET',
 			url: 'https://r26ast.github.io/CBT/json/login.json',
@@ -417,15 +428,7 @@
 							if(password == userData["password"]) {
 								console.log("success");
 								localStorage.setItem('user', username);
-								//$('#formLogin').submit();
-								//window.open('konfirmasi_tes.html', '_self');
-								$('#notifikasi').fadeIn();
-								alert(1500);
-								$('#ikon-alert').addClass('fas fa-solid fa-check');
-								$('.check').css('background-color', '#0ABF30');
-								$('head').append('<style> .progress:before{background-color: #0ABF30;} .progress.active:before{animation: progress 1.5s linear forwards;} </style>');
-								$('.toast').css('border-left-color', '#0ABF30');
-								$('#tipe-alert').html('Berhasil');
+								sukses();
 								$('#pesan-alert').html('Anda berhasil masuk');
 								setTimeout(function() {$('#loader').fadeIn();}, 1801);
 								setTimeout(function() {window.location.replace('konfirmasi_data.html');}, 2500);
@@ -433,32 +436,20 @@
 							}
 							else {
 								console.log("error pass");
-								$('#notifikasi').fadeIn();
-								alert(2000);
-								$('#ikon-alert').addClass('fas fa-circle-xmark');
-								$('.check').css('background-color', '#E24D4C');
-								$('head').append('<style> .progress:before{background-color: #E24D4C;} .progress.active:before{animation: progress 2s linear forwards;} </style>');	
-								$('.toast').css('border-left-color', '#E24D4C');
-								$('#tipe-alert').html('Terjadi Galat!');
+								error();
 								$('#pesan-alert').html('Username atau password salah');
 							}
 						}
 						else {
 							console.log("error user");
-							$('#notifikasi').fadeIn();
-							alert(2000);
-							$('#ikon-alert').addClass('fas fa-circle-xmark');
-							$('.check').css('background-color', '#E24D4C');
-							$('head').append('<style> .progress:before{background-color: #E24D4C;} .progress.active:before{animation: progress 2s linear forwards;} </style>');	
-							$('.toast').css('border-left-color', '#E24D4C');
-							$('#tipe-alert').html('Terjadi Galat!');
+							error();
 							$('#pesan-alert').html('Username atau password salah');
-							//alert('Username atau password salah');
 						}
 					}
 				},
 				error: function() {
-					alert("error");
+					error();
+					$('#pesan-alert').html('Galat dalam konektivitas');
 				}
 			});		
 		}
@@ -475,51 +466,6 @@
 			$('#password').attr('type','password');
 		}
 	}
-</script>
-
-<script>
-/* --- Alert Notification --- */
-
-let timer1, timer2;
-	  
-function alert(waktu) {
-	$('.toast').addClass("active");
-    $('.progress').addClass("active");
-    timer1 = setTimeout(() => {
-        $('.toast').removeClass("active");
-    }, waktu); //1s = 1000 milliseconds
-    timer2 = setTimeout(() => {
-		$('.progress').removeClass("active");
-		$('#notifikasi').fadeOut();
-    }, waktu + 300);	
-	
-	
-	/*init({
-		fade_in : 800 ,
-		fade_out : 800 ,
-		position : 'top-right'
-	});
-                                    
-                                    
-	toast({ 
-		title : '<b>Terjadi Galat!</b>' , 
-		description : 'Username atau password salah' ,
-		type : 'error' ,
-		//timeout : 5000
-	})*/
-}
-
-$('.close').click(function () {
-    $('.toast').removeClass("active");
-        
-    setTimeout(() => {
-        $('.progress').removeClass("active");
-		$('#notifikasi').fadeOut();
-    }, 300);
-    clearTimeout(timer1);
-    clearTimeout(timer2);
-});
-
 </script>
 
 </body>
