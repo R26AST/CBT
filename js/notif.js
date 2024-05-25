@@ -18,7 +18,7 @@ function sukses() {
 	$('.icon').css('background-color', '#0ABF30');
 	$('head').append('<style> .progress:before{background-color: #0ABF30;} .progress.active:before{animation: progress 1.5s linear forwards;} </style>');	
 	$('.toast').css('border-left-color', '#0ABF30');
-	$('#tipe-alert').html('Sukses');
+	$('#tipe-alert').html('<b>Sukses</b>');
 	alert(1500);
 }
 
@@ -27,7 +27,7 @@ function error() {
 	$('.icon').css('background-color', '#E24D4C');
 	$('head').append('<style> .progress:before{background-color: #E24D4C;} .progress.active:before{animation: progress 2s linear forwards;} </style>');	
 	$('.toast').css('border-left-color', '#E24D4C');
-	$('#tipe-alert').html('Terjadi Galat!');
+	$('#tipe-alert').html('<b>Terjadi Galat!</b>');
 	alert(2000);
 }
 
@@ -36,7 +36,7 @@ function info() {
 	$('.icon').css('background-color', '#3498DB');
 	$('head').append('<style> .progress:before{background-color: #3498DB;} .progress.active:before{animation: progress 2s linear forwards;} </style>');	
 	$('.toast').css('border-left-color', '#3498DB');
-	$('#tipe-alert').html('Informasi!');
+	$('#tipe-alert').html('<b>Informasi!</b>');
 	alert(2000);	
 }
 
