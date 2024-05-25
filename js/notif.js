@@ -9,7 +9,7 @@ function alert(waktu) {
     }, waktu); //1s = 1000 milliseconds
     timer2 = setTimeout(() => {
 		$('.progress').removeClass("active");
-		$('#notifikasi').fadeOut();
+		$('#login-btn').prop('disabled',false);
     }, waktu + 300);	
 }
 
