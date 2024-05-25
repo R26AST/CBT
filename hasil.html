@@ -384,8 +384,8 @@
 			
 			<div class="col-sm-12 text-right">
 				<!--<a class="btn btn-outline-success btn-sm btn-round pull-right"  href="."><i class="fa fa-check"></i> Pilih Subtes</a>-->
-				<button class="btn btn-outline-primary btn-sm btn-round pull-right" onClick="downloadResult()" id="btn-unduh"><i class="fa fa-download"></i> Unduh Hasil</button>
-				<button class="btn btn-outline-primary btn-sm btn-round pull-right" onClick="downloadBahas()" id="btn-unduh"><i class="fa fa-download"></i> Unduh Pembahasan</button>
+				<button class="btn btn-outline-primary btn-sm btn-round pull-right" id="btn-unduh"><i class="fa fa-download"></i> Unduh Hasil</button>
+				<button class="btn btn-outline-primary btn-sm btn-round pull-right" id="btn-unduh-bahasan"><i class="fa fa-download"></i> Unduh Pembahasan</button>
 				<button class="btn btn-outline-danger btn-sm btn-round pull-right"  onClick="logout()">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
 			</div>
 			<div class="col-sm-12 text-left" style="font-size:12px;margin-top:50px">
@@ -647,7 +647,7 @@ $('document').ready(function() {
 	}
 	
 	
-	function downloadResult() {
+	$('#btn-unduh').click(function() {
 		alert('Mohon maaf akses download belum tersedia');
 		/*$.ajax({ 
 			   type: "POST",
@@ -670,11 +670,11 @@ $('document').ready(function() {
 					window.location = result;
 			   }
 			});*/
-	}
+	});
 	
-	function downloadBahas() {
+	$('#btn-unduh-bahasan').click(function() {
 		alert('Mohon maaf akses download belum tersedia');
-	}
+	});
 });
 </script>
   
