@@ -282,21 +282,6 @@
 		setTimeout(function() {
 			generate_token();
 		}, 500);
-		/*$.ajax({ 
-			   type: "POST",
-			   dataType: "html",
-			   data : '',
-			   url: "https://pusmendik.kemdikbud.go.id/an/simulasi_akm/refreshtoken?ses_id=b1c678a24056d81fb753407d2ae33f4816677225",
-			   cache: false, 
-			   beforeSend: function(){
-				   $('#token').html('<i>Mengambil Token</i>');
-				},
-				complete: function(){
-				},
-				success: function(result){
-					$('#token').html('Token : '+result);
-			   }
-			});	*/
 	}
 	console.log(token);
 	function konfirmasiData() {
@@ -317,7 +302,7 @@
 				if ($('#input-token').val() == token) {
 					localStorage.setItem('nama_peserta', $('#nama_peserta').val());
 					$('#loader').fadeIn();
-					setTimeout(function() {window.location.replace('konfirmasi_tes.html');}, 500);
+					setTimeout(function() {window.location.replace('konfirmasi_tes');}, 500);
 				}
 				else {
 					alert('Token salah!');
