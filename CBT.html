@@ -2184,12 +2184,16 @@ Kecepatan cahaya <img src="https://latex.codecogs.com/svg.image?\large&space;c=3
 		}
 
 		window.setTimeout( lihatSoal(1), 5000 ); // 5 seconds
+
+		$('body').bind("copy paste", function (e) { 
+			return false; 
+		});
 	});
 	
 	var selected = 1;
 	var jumlah_soal = 40;
 	function lihatSoal(nomor) {
-	console.log(nomor);
+	//console.log(nomor);
 		$('.soal-soal').css('display','none');
 		if (nomor=='') {
 			nomor = selected;
