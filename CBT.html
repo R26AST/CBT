@@ -2368,6 +2368,9 @@ Kecepatan cahaya <img src="https://latex.codecogs.com/svg.image?\large&space;c=3
 		else if (e.key === "ArrowLeft") {
 			prevSoal();
 		}
+		else if (e.key === "R" || e.key === "r") {
+			soalRagu();
+		}	
 	});
 	
 	function nextSoal() {
@@ -2459,7 +2462,7 @@ Kecepatan cahaya <img src="https://latex.codecogs.com/svg.image?\large&space;c=3
 	}
 	
 	function selesaikanTes() {
-		window.location.replace('selesai.html');
+		window.location.replace('selesai');
 		
 		window.addEventListener('load', () => {
 			const handleNetworkChange = () => {
