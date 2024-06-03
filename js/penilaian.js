@@ -1,6 +1,3 @@
-//var soalPG = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 19, 20];
-var KJ = ['C', 'C', 'D', 'B', 'B'];
-
 var skor = 0;
 
 let sepertiga = eval(1/3);
@@ -389,7 +386,7 @@ localStorage.setItem('nilai', nilai);
 kirimNilai();
 
 function kirimNilai() {
-      var nama_peserta = localStorage.getItem('nama');
+      var nama_peserta = localStorage.getItem('nama_peserta');
       var username_peserta = localStorage.getItem('user');
       var skor_peserta = skor;
       var nilai_peserta = nilai;
