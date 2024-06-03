@@ -386,7 +386,7 @@
 				<!--<a class="btn btn-outline-success btn-sm btn-round pull-right"  href="."><i class="fa fa-check"></i> Pilih Subtes</a>-->
 				<button class="btn btn-outline-primary btn-sm btn-round pull-right" id="btn-unduh"><i class="fa fa-download"></i> Unduh Hasil</button>
 				<button class="btn btn-outline-primary btn-sm btn-round pull-right" id="btn-unduh-bahasan"><i class="fa fa-download"></i> Unduh Pembahasan</button>
-				<button class="btn btn-outline-danger btn-sm btn-round pull-right"  onclick="logout()">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
+				<button class="btn btn-outline-danger btn-sm btn-round pull-right"  id="logout">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
 			</div>
 			<div class="col-sm-12 text-left" style="font-size:12px;margin-top:50px">
 				<div>Kontak R26 :</div>
@@ -615,11 +615,11 @@
 
 $('document').ready(function() {
 	$('#loader').fadeOut();
-	function logout() {
+	$('#logout').click(function () {
 		$('#loader').fadeIn();
 		setTimeout(function() {window.location.replace("https://r26ast.github.io/osn/osn")}, 500);
 		localStorage.clear();
-	}
+	});
 
 
 	function showBahasan(nomor) {
