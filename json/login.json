@@ -2,47 +2,68 @@
     {
         "user": "R26Astro",
         "password": "R26AST",
+	"kategori": "admin",
 	"nama": "PUTRAKU RULIFF ABBAS"
     },
     {
         "user": "PEMB01",
-        "password": "pem2601"
+        "password": "pem2601",
+	"kategori": "guru"
     },
     {
         "user": "PEMB02",
-        "password": "pem2602"
+        "password": "pem2602",
+	"kategori": "guru"
     },
     {
         "user": "AST001",
-        "password": "astr2601"
+        "password": "astr2601",
+	"kategori": "peserta"
     },
     {
         "user": "AST002",
-        "password": "astr2602"
+        "password": "astr2602",
+	"kategori": "peserta"
     }
     ,
     {
         "user": "AST003",
-        "password": "astr2603"
+        "password": "astr2603",
+	 "kategori": "peserta"
     },
     {
         "user": "AST004",
-        "password": "astr2604"
+        "password": "astr2604",
+	"kategori": "peserta"
     },
     {
         "user": "AST005",
-        "password": "astr2605"
+        "password": "astr2605",
+	"kategori": "peserta"
     },
 	{
         "user": "AST006",
-        "password": "astr2606"
+        "password": "astr2606",
+	"kategori": "peserta"
     },
 	{
         "user": "AST007",
-        "password": "astr2607"
+        "password": "astr2607",
+	"kategori": "peserta"
     },
 	{
-        "user": "ASTEST",
-        "password": "astrtest"
+        "user": "ASTESTA",
+        "password": "astrtesta",
+	"kategori": "admin"
+    },
+	{
+        "user": "ASTESTG",
+        "password": "astrtestg",
+	"kategori": "guru"
+    },
+	{
+        "user": "ASTESTP",
+        "password": "astrtestp",
+	"kategori": "peserta"
     }
 ]
