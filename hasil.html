@@ -623,7 +623,7 @@ $('document').ready(function() {
 
 
 	function showBahasan(nomor) {
-		$.ajax("https://r26ast.github.io/CBT/json/pembahasan.json")
+		$.get("https://r26ast.github.io/CBT/json/pembahasan.json")
 			.done( function(result){
 				var cetak = result[nomor - 1].bahas;
 				$('.pembahasan-soal').html(cetak);
