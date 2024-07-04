@@ -9,12 +9,7 @@
     },
     {
         "id": 3,
-        "bahas": "Diketahui: <br>"+
-                    "1. m = 5,7 mag <br>"+
-                    "2. M = &ndash;1,2 mag <br>"+
-                    "3. a = 1,5 mag/kpc <br>"+
-                "Ditanya: d = ...?<br>"+
-                "<img src='https://latex.codecogs.com/svg.image?\large&space;m-M=-5&plus;5\times&space;log(d)&plus;a\times&space;d' title='m-M=-5+5\times log(d)+a\times d' />"
+        "bahas": "Diketahui: <br>1. m = 5,7 mag <br>2. M = &ndash;1,2 mag <br>3. a = 1,5 mag/kpc <br>Ditanya: d = ...?<br><img src='' title='m-M=-5+5\times log(d)+a\times d' />"
     }
     ,
     {
