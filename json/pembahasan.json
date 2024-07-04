@@ -5,8 +5,7 @@
     },
     {
         "id": 2,
-        "bahas": `<img src='https://latex.codecogs.com/svg.image?%5Clarge%20%5Clambda%20_%7Bmaks%7D%5Ctimes%20T_%7Beff%7D=1,898%5Ctimes%2010%5E%7B-3%7DmK'><br>
-                    <img src='https://latex.codecogs.com/svg.image?%5Clarge%20%5Clambda%20_%7Bmaks%7D=%5Cfrac%7B1,898%5Ctimes%2010%5E%7B-3%7DmK%7D%7BT_%7Beff%7D%7D'>`
+        "bahas": "<img src='https://latex.codecogs.com/svg.image?%5Clarge%20%5Clambda%20_%7Bmaks%7D%5Ctimes%20T_%7Beff%7D=1,898%5Ctimes%2010%5E%7B-3%7DmK'><br><img src='https://latex.codecogs.com/svg.image?%5Clarge%20%5Clambda%20_%7Bmaks%7D=%5Cfrac%7B1,898%5Ctimes%2010%5E%7B-3%7DmK%7D%7BT_%7Beff%7D%7D'>"
     },
     {
         "id": 3,
