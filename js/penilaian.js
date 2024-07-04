@@ -26,7 +26,7 @@ if(localStorage.getItem('nomor2') === 'C') { //2
 	console.log('2 benar');
 }
 
-if(localStorage.getItem('nomor3') === 'D') { //3
+if(localStorage.getItem('nomor3') === 'A') { //3
 	skor+=1;
 	console.log('3 benar');
 }
