@@ -9,7 +9,12 @@
     },
     {
         "id": 3,
-        "bahas": "<img width='10%' src='https://latex.codecogs.com/svg.image?%5Clarge%20%20t_d=%5Csqrt%7B%5Cfrac%7B3%5Cpi%7D%7B32%5Ccdot%206,673%5Ccdot%2010%5E%7B-11%7D%5Ccdot%5Cfrac%7B200%7D%7B10%5E%7B-6%7D%7D%5Ccdot%201,6735%5Ccdot%2010%5E%7B-27%7D%7D%7D'/>"
+        "bahas": "Diketahui: <br>"+
+                    "1. m = 5,7 mag <br>"+
+                    "2. M = &ndash;1,2 mag <br>"+
+                    "3. a = 1,5 mag/kpc <br>"+
+                "Ditanya: d = ...?<br>"+
+                "<img src="https://latex.codecogs.com/svg.image?\large&space;m-M=-5&plus;5\times&space;log(d)&plus;a\times&space;d" title="m-M=-5+5\times log(d)+a\times d" />"
     }
     ,
     {
