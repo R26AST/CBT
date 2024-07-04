@@ -623,8 +623,19 @@ $('document').ready(function() {
 
 
 	function showBahasan(nomor) {
+		$.ajax("https://r26ast.github.io/CBT/json/pembahasan.json")
+			.done( function(result){
+				var cetak = result[nomor - 1].bahas;
+				$('.pembahasan-soal').html(cetak);
+				console.log( "success" );
+			})
+			.fail( function(){
+				$('.pembahasan-soal').html('<i class="fa fa-spinner fa-spin"></i> Terjadi galat...');
+				console.log( "error");
+			});
+			
 		
-		$.ajax({ 
+		/*$.ajax({ 
 			   type: "GET",
 			   dataType: "json",
 			   url: "https://r26ast.github.io/CBT/json/pembahasan.json",
@@ -643,7 +654,7 @@ $('document').ready(function() {
 					$('.pembahasan-soal').html('<i class="fa fa-spinner fa-spin"></i> Terjadi galat...');
 					console.log( "error");
 			   }
-			});
+			});*/
 	}
 	
 	
