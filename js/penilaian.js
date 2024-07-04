@@ -379,7 +379,7 @@ skor = skor.toFixed(2);
 console.log(skor);
 localStorage.setItem('skor', skor);
 
-let nilai = (skor / 40) * 100;
+let nilai = ((skor / 40) * 100).toFixed(2);
 console.log(nilai);
 localStorage.setItem('nilai', nilai);
 
