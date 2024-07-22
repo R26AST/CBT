@@ -626,7 +626,10 @@ $('document').ready(function() {
 		console.log(nomor);
 		$('.pembahasan-soal').load('./json/pembahasan/'+ nomor +'.html', function(data, status){
 			alert("Status: " + status);
-		});
+		}).fail( function(){
+				$('.pembahasan-soal').html('<i class="fa fa-spinner fa-spin"></i> Terjadi galat...');
+				console.log( "error");
+			});
 		/*$.get("https://r26ast.github.io/CBT/json/pembahasan.json")
 			.done( function(result){
 				var cetak = result[nomor - 1].bahas;
