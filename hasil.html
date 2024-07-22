@@ -624,14 +624,15 @@ $('document').ready(function() {
 
 	function showBahasan(nomor) {
 		console.log(nomor);
-		/*$('.pembahasan-soal').load('./json/pembahasan/'+ nomor +'.html', function(data, status){
+		$('.pembahasan-soal').load('./json/pembahasan/'+ nomor +'.html', function(data, status){
 			//alert("Status: " + status);
 			if(status === "error") {
 				$('.pembahasan-soal').html('<i class="fa fa-spinner fa-spin"></i> Terjadi galat...');
 				console.log( "error");
 			   }
-		});*/
-		$.get('./json/pembahasan/'+ nomor +'.html', function() {
+		});
+		
+		/*$.get('./json/pembahasan/'+ nomor +'.html', function() {
 			$('.pembahasan-soal').html('<i class="fa fa-spinner fa-spin"></i> Silakan Tunggu...');
 		})
 		.done( function(result) {
