@@ -631,12 +631,12 @@ $('document').ready(function() {
 				console.log( "error");
 			   }
 		});*/
-		$.get("https://r26ast.github.io/CBT/json/pembahasan.json", function() {
+		$.get('./json/pembahasan/'+ nomor +'.html', function() {
 			$('.pembahasan-soal').html('<i class="fa fa-spinner fa-spin"></i> Silakan Tunggu...');
 		})
 		.done( function(result) {
-			var cetak = result[nomor - 1].bahas;
-			$('.pembahasan-soal').html(cetak);
+			//var cetak = result[nomor - 1].bahas;
+			$('.pembahasan-soal').html(result);
 			console.log( "success" );
 		})
 		.fail( function() {
