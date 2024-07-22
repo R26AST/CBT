@@ -65,6 +65,7 @@
 		<div class="text-left pt-3 pb-5 mb-2" id="formContent" style="background-size: 300px;background-image: url('https://pusmendik.kemdikbud.go.id/an/images/logo-w.png');background-repeat: no-repeat;background-position: top right; ">
 		  <div class="row row-atas"> 
 			<div class="col-sm-4"><span style="font-size:18px">Soal nomor</span> <span style="font-size:20px" id="noSoal">1</span></div>
+			<div class="col-sm-4" style="text-align:right;"><span style="font-size:18px" id="ip"></span></div>
 			<div class="col-sm-8 cont-btn-informasi">
 				<button class="btn-informasi btn btn-primary btn-round m" data-toggle="modal" data-target="#infoSoal" style="border-radius:30px;font-size:12px;"><i class="fa fa-info-circle d-sm-none"></i><span class="d-none d-sm-inline-block">INFORMASI SOAL<span></span></button>
 				<button class="btn-informasi btn  btn-outline-secondary  btn-round" style="border-radius:30px;font-size:14px;">Sisa Waktu : <b><span id="countdown">00:00</span></b></button>
@@ -2372,6 +2373,11 @@ var remaining;
 				$('#pelanggaran').modal('hide');
 			}				
 		}, 100);
+
+		 $.getJSON("https://api.ipify.org?format=json", function (data) {
+			// Displayin IP address on screen
+			$("#ip").html(data.ip);
+		});
 
 	});
 	
