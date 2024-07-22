@@ -624,7 +624,9 @@ $('document').ready(function() {
 
 	function showBahasan(nomor) {
 		console.log(nomor);
-		$('.pembahasan-soal').load('./json/pembahasan/'+ nomor +'.html');
+		$('.pembahasan-soal').load('./json/pembahasan/'+ nomor +'.html', function(data, status){
+			alert("Data: " + data + "\nStatus: " + status);
+		});
 		/*$.get("https://r26ast.github.io/CBT/json/pembahasan.json")
 			.done( function(result){
 				var cetak = result[nomor - 1].bahas;
