@@ -666,7 +666,9 @@ $('document').ready(function() {
 			   }
 			});*/
 	}
-	
+	if( $('.modal').hasClass('show') === false) {
+		$('.pembahasan-soal').html('');
+	}
 	
 	$('#btn-unduh').click(function() {
 		alert('Mohon maaf akses download belum tersedia');
